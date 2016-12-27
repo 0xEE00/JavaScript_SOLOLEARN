@@ -32,3 +32,8 @@
     <div class="box" id="window-command-wrap"><button class="window-command" value="ok" id="command-ok">U redu</button><button class="window-command" value="cancel"
             id="command-cancel">Otkaži</button></div>
 </div>
+
+$payment_cach.on("click", function () {
+        var cmd = 'BtCashPressed';
+        showInputWindow(cmd, false);
+    });
