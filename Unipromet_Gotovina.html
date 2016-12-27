@@ -1,3 +1,31 @@
+<div class="box infoboxwrap">
+    <div class="box infobox">
+        <div class="box priceinfolabel"><span>Iznos sa PDV-om</span></div>
+        <div class="box priceinfodata"><span id="priceinclvat">156,00</span></div>
+    </div>
+    <div class="box infobox">
+        <div class="box priceinfolabel"><span>Iznos bez PDV-a</span></div>
+        <div class="box priceinfodata"><span id="amount">130,00</span></div>
+    </div>
+    <div class="box infobox">
+        <div class="box priceinfolabel"><span>Iznos PDV-a</span></div>
+        <div class="box priceinfodata"><span id="vatamount">26,00</span></div>
+    </div>
+    <div class="box infobox">
+        <div class="box priceinfolabel"><span>Ukupna uplata</span></div>
+        <div class="box priceinfodata"><span id="paymentamount">0,00</span></div>
+    </div>
+    <div class="box infobox">
+        <div class="box priceinfolabel"><span>Povrat</span></div>
+        <div class="box priceinfodata"><span id="returnamount">0,00</span></div>
+    </div>
+    <div class="box infobox">
+        <div class="box priceinfolabel"><span>Saldo</span></div>
+        <div class="box priceinfodata"><span id="balanceamount">156,00</span></div>
+    </div>
+</div>
+
+
 <div class="box" id="paymentcontainer">
     <div class="box paymentwrap" id="paymentmethodcontainer1"><button class="paybox" id="payment-cash">Gotovina</button></div>
     <div class="box paymentwrap" id="paymentmethodcontainer2"><button class="paybox" id="payment-check">Ček</button></div>
@@ -33,7 +61,4 @@
             id="command-cancel">Otkaži</button></div>
 </div>
 
-$payment_cach.on("click", function () {
-        var cmd = 'BtCashPressed';
-        showInputWindow(cmd, false);
-    });
+$payment_cach.on("click", function () { var cmd = 'BtCashPressed'; showInputWindow(cmd, false); });
